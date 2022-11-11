@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Uong Timeline</title>
+  <link href="googlefont.css" rel="stylesheet">
+
+  <link rel='stylesheet prefetch' href='bootstrap-3.3.6\dist\css\bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/backgrounds.css">
+
+
+</head>
+
+<body onload = "initialize()">
+  <header>
+    <div class="container text-center">
+      <h1>Samuel Uong</h1><br>
+      <p>Professional Timeline</p>
+    </div>
+  </header>
+
+  <section class="timeline">
+    <div class="container">
+
+
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+        <div class="timeline-content timeline-card js--fadeInLeft">
+        	<div class="timeline-img-header" id="uni" style="center center no-repeat; background-size:cover; height:300px">
+        	</div>
+          <div style="width:100%;text-align:center">
+            <button type="button" class="btn btn-default" onclick="slideShow('uni', -1, '200px')" style="display:inline-block"> << </button>
+            <p id="uniCount" style="display:inline-block"></p>
+            <button type="button" class="btn btn-default" onclick="slideShow('uni', 1, '200px')" style="display:inline-block"> >> </button>
+          </div>
+        	<div class="date">Sep 2016 - Jun 2020</div>
+          <div style="padding-bottom:5%;padding-left:5%;padding-right:5%">
+            <h3>Graduated from NJIT's Honors College:</h3>
+            <ul >
+              <li>Bachelor of Science: Information Technology</li>
+              <li>Minor in Computer Science & Business</li>
+              <li>GPA: 3.99/4.0</li>
+              <li>Summa Cum Laude, Albert Dorman Honors College</li>
+              <li>Studied Abroad in Hong Kong Polytechnic University in 2019</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+        <div class="timeline-content js--fadeInRight">
+          <div class="timeline-img-header" id="jnj1" style="center center no-repeat; background-size:cover; height:300px">
+          </div>
+          <div style="width:100%;text-align:center">
+            <button type="button" class="btn btn-default" onclick="slideShow('jnj1', -1, '200px')" style="display:inline-block"> << </button>
+            <p id="uniCount" style="display:inline-block"></p>
+            <button type="button" class="btn btn-default" onclick="slideShow('jnj1', 1, '200px')" style="display:inline-block"> >> </button>
+          </div>
+          <div class="date">Jan 2018 - May 2019</div>
+          <h2>Software Engineer Co-op : <br>Johnson & Johnson</h2>
+          <h4>Worked on Knowledge graph databases/full stack dev</h4>
+          <ul>
+            <li>Created various tools with Neo4j as the backend</li>
+            <ul>
+              <li>Utilized Natural Language Processing and Neo4j to create a website showcasing the Johnson and Johnson Yammer community (similar to an internal linkedin) </li>
+              <li>Created various internal pages to visualize/allow for quick search of internal data</li>
+            </ul>
+            <li>Created a search page for company data using Kibana and Elasticsearch</li>
+          </ul>
+        </div>
+
+      </div>
+
+
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+        <div class="timeline-content timeline-card js--fadeInLeft">
+        	<div class="timeline-img-header" style="background:url('img/cs.png') center center no-repeat; background-size:cover;">
+        	</div>
+        	<div class="date">Jun 2019 - Aug 2019</div>
+          <div style="padding-bottom:5%;padding-left:5%;padding-right:5%">
+          <h2>Software Engineer Intern : <br> Credit Suisse</h2>
+          <h4>Worked with Robotic Process Automation and Distributed Processing</h4>
+          <ul>
+            <li>Created a distributed processing application to check for data integrity/validity</li>
+            <li>Streamlined internal data processing through the use of Blue Prism and Python</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+        <div class="timeline-content timeline-card js--fadeInRight">
+        	<div class="timeline-img-header" style="background:url('img/jnj.png') center center no-repeat; background-size:cover;">
+        	</div>
+        	<div class="date">Jan 2020 - Jul 2020</div>
+          <div style="padding-bottom:5%;padding-left:5%;padding-right:5%">
+          <h2>Software Engineer Co-op : <br> Johnson & Johnson</h2>
+          <h4>Worked with Python/PHP to create a report generating tool + visualizations</h4>
+          <ul>
+            <li>Created a tool to use as a framework in order to generate interactive websites for quarterly reports</li>
+            <li>Developed a visualization platform and website for weekly knowledge sharing meetings</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+        <div class="timeline-content timeline-card js--fadeInLeft">
+        	<div class="timeline-img-header" style="background:url('img/cs.png') center center no-repeat; background-size:cover;">
+        	</div>
+        	<div class="date">Jul 2020 - Nov 2021</div>
+          <div style="padding-bottom:5%;padding-left:5%;padding-right:5%">
+          <h2>Data Scientist/Data Engineer : <br> Credit Suisse</h2>
+          <h4>Worked with Machine Learning and Data processing</h4>
+          <ul>
+            <li>Worked as a team to design and develop an Optical Character Recognition tool that allows business users to search through images/PDFs of LIBOR Financial Documents</li>
+            <ul>
+              <li>Won the GCIO Americas Excellence Award in Q4 2020</li>
+            </ul>
+            <li>Took part int he development of an anomaly detection pipeline that was comprised of various machine learning models</li>
+            <ul>
+              <li>Utilized Pyspark/Hadoop for distributed processing</li>
+              <li>Used the ARIMA model, Exponential Smoothing, and Correlation models</li>
+            </ul>
+            <li>Developed an application to augment training datasets through week supervised ML through the tool Snorkel</li>
+            <ul>
+              <li>Presented this demo to the overarching org on "AI Innovation Day 2020"</li>
+              <li>Augmented data boosted accuracy from 87% to 92%</li>
+            </ul>
+          </ul>
+        </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+        <div class="timeline-content timeline-card js--fadeInRight">
+        	<div class="timeline-img-header" style="background:url('img/c1.png') center center no-repeat; background-size:cover;">
+        	</div>
+        	<div class="date">Jan 2020 - Jul 2020</div>
+          <div style="padding-bottom:5%;padding-left:5%;padding-right:5%">
+          <h2>Software Engineer : <br> Capital One</h2>
+          <h4>Worked as a full stack developer for an internal Machine Learning Platform</h4>
+          <ul>
+            <li>Worked on maintaining and adding features to an enterprise-wide machine learning platform</li>
+            <li>Built an internal API that provisioned and created Kubernetes applications for ML jobs. This was done to move away from using AWS EMR to reduce deployment time</li>
+            <li>Migrated the API component of our ML platform to a new AWS account in order to prevent our subnet running out of available IP addresses</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
+  <script src="js/index.js"></script>
+
+
+  <script>
+
+  var dict = {
+    uni:[["njit.jpg", "polyu.png"], 0],
+    jnj1:[["jnj.png", "neo4j.png", "elastic.png"],0],
+  }
+
+  function initialize(){
+    for(var data in dict){
+      slideShow(data, 0)
+    }
+  }
+
+
+
+  function slideShow(id, direction, height='200px') {
+      var slides = dict[id][0]
+      var index = dict[id][1]
+      var newIndex = direction + index
+      if (newIndex < 0){
+        newIndex = slides.length - 1
+      }
+      else if(newIndex > slides.length-1){
+        newIndex = 0
+      }
+      var slide = slides[newIndex]
+      console.log(newIndex)
+      document.getElementById(id).style = "background:url('img/" + slide + "') center center no-repeat; background-size:cover; height:" + height
+      dict[id][1] = newIndex
+
+
+      var sCount =  newIndex + 1
+      var total = slides.length
+      document.getElementById(id + "Count").innerHTML = sCount + "/" + total
+  }
+  </script>
+</body>
+</html>
